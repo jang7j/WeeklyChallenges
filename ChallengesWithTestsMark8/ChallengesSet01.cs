@@ -6,7 +6,7 @@ namespace ChallengesWithTestsMark8
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            if(num1 == num2)
+            if (num1 == num2)
             {
                 return true;
             }
@@ -18,32 +18,37 @@ namespace ChallengesWithTestsMark8
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            return minuend - subtrahend;
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            return number1 + number2;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            var result = (number1 < number2) ? number1 : number2;
+            return result;
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            return factor1 * factor2;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+
+            var message = (nameOfPerson == "") ? "Hello!" : $"Hello, {nameOfPerson}!";
+            return message;
+
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            return ("HEY!");
         }
     }
 }
+
